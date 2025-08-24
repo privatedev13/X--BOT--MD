@@ -64,7 +64,7 @@ async ({
 
 
 Sparky({
-    name: "repo",
+    name: "yiot",
     fromMe: true,
     category: "misc",
     desc: ""
@@ -72,7 +72,7 @@ Sparky({
 async ({
     m, client, args
 }) => {
-const data = await getJson('https://api.github.com/repos/A-S-W-I-N-S-P-A-R-K-Y/X--BOT--MD');
+const data = await getJson('https://api.github.com/repos');
         const repoInfo = `
     _*💻 BOT REPOSITORY*_
         
@@ -80,7 +80,7 @@ const data = await getJson('https://api.github.com/repos/A-S-W-I-N-S-P-A-R-K-Y/X
 🔸 *Stars:* ${data.stargazers_count}
 🔸 *Forks:* ${data.forks_count}
 🔸 *GitHub Link:* 
-https://github.com/A-S-W-I-N-S-P-A-R-K-Y/X--BOT--MD
+https://github.com
 
 Hey ${m.pushName}!, Don't forget to star and fork my repository!`;
 
@@ -97,7 +97,7 @@ Sparky({
 async ({
     m, client, args
 }) => {
-const data = await getJson('https://api.github.com/repos/A-S-W-I-N-S-P-A-R-K-Y/X--BOT--MD');
+const data = await getJson('https://api.github.com/repo');
         const repoInfo = `
     _*💻 BOT REPOSITORY*_
         
@@ -105,7 +105,7 @@ const data = await getJson('https://api.github.com/repos/A-S-W-I-N-S-P-A-R-K-Y/X
 🔸 *Stars:* ${data.stargazers_count}
 🔸 *Forks:* ${data.forks_count}
 🔸 *GitHub Link:* 
-https://github.com/A-S-W-I-N-S-P-A-R-K-Y/X--BOT--MD
+https://github.com
 
 Hey ${m.pushName}!, Don't forget to star and fork my repository!`;
 
